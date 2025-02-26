@@ -1,24 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BOGO Offer</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <div class="price-container">
-        <div class="title-container">
-            <div class="line"></div>
-            <div class="title">YAY! It’s BOGO</div>
-            <div class="line"></div>
-        </div>
-        </div>
+      <div class="title-container">
+        <div class="line"></div>
+        <div class="title">YAY! It’s BOGO</div>
+        <div class="line"></div>
+      </div>
 
-       <h1>Krutik</h1>
+      <div class="pricing-option" id="1" onclick="expandPriceDetails(1)">
+        <div class="unit-selection">
+          <div class="unit-option">
+            <input type="radio" name="unit" id="unit1" />
+            <div class="unit-info">
+              <div>
+                <label for="unit1" class="unit-title">1 Unit</label>
+                <span class="discount-badge">10% Off</span>
+              </div>
+              <span class="price-type">Standard Price</span>
+            </div>
+          </div>
+          <div>
+            <div class="price">$10.00 USD</div>
+            <div class="old-price">$24.00 USD</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pricing-option" id="2" onclick="expandPriceDetails(2)">
+        <div class="unit-selection">
+          <div class="unit-option">
+            <input type="radio" name="unit" id="unit2" />
+            <div class="unit-info">
+              <div>
+                <label for="unit2" class="unit-title">2 Unit</label>
+                <span class="discount-badge">20% Off</span>
+              </div>
+              <!-- <span class="price-type">Standard Price</span> -->
+            </div>
+          </div>
+          <div>
+            <div class="price">$18.00 USD</div>
+            <div class="old-price">$24.00 USD</div>
+          </div>
+        </div>
+      </div>
+      <div class="pricing-option" id="3" onclick="expandPriceDetails(3)">
+        <div class="unit-selection">
+          <div class="unit-option">
+            <input type="radio" name="unit" id="unit3" />
+            <div class="unit-info">
+              <div>
+                <label for="unit3" class="unit-title">3 Unit</label>
+                <span class="discount-badge">30% Off</span>
+              </div>
+              <!-- <span class="price-type">Standard Price</span> -->
+            </div>
+          </div>
+          <div>
+            <div class="price">$24.00 USD</div>
+            <div class="old-price">$24.00 USD</div>
+          </div>
+        </div>
+      </div>
     </div>
 
-
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
