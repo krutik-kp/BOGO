@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BOGO Offer</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <div class="price-container">
@@ -14,8 +22,8 @@
         <div class="line"></div>
       </div>
 
-      <div class="pricing-option" id="1" onclick="expandPriceDetails(1)">
-        <div class="unit-selection">
+      <div class="pricing-option" id="1">
+        <div class="unit-selection" onclick="expandPriceDetails(1)">
           <div class="unit-option">
             <input type="radio" name="unit" id="unit1" />
             <div class="unit-info">
@@ -31,10 +39,11 @@
             <div class="old-price">$24.00 USD</div>
           </div>
         </div>
+        <div class="details" id="details-1"></div>
       </div>
 
-      <div class="pricing-option" id="2" onclick="expandPriceDetails(2)">
-        <div class="unit-selection">
+      <div class="pricing-option" id="2">
+        <div class="unit-selection" onclick="expandPriceDetails(2)">
           <div class="unit-option">
             <input type="radio" name="unit" id="unit2" />
             <div class="unit-info">
@@ -50,9 +59,11 @@
             <div class="old-price">$24.00 USD</div>
           </div>
         </div>
+        <div class="most-popular">Most Popular</div>
+        <div class="details" id="details-2"></div>
       </div>
-      <div class="pricing-option" id="3" onclick="expandPriceDetails(3)">
-        <div class="unit-selection">
+      <div class="pricing-option" id="3">
+        <div class="unit-selection" onclick="expandPriceDetails(3)">
           <div class="unit-option">
             <input type="radio" name="unit" id="unit3" />
             <div class="unit-info">
@@ -68,7 +79,23 @@
             <div class="old-price">$24.00 USD</div>
           </div>
         </div>
+        <div class="details" id="details-3"></div>
       </div>
+      <div class="delivery-details">
+        <div class="delivery-type">Free Delivery</div>
+        <div class="total-amount">
+          <div>Total :</div>
+          <div>$18.00 USD</div>
+        </div>
+      </div>
+      <button>
+        <i
+          class="fa fa-plus"
+          style="margin-right: 8px; font-weight: normal"
+        ></i>
+        Add to Cart
+      </button>
+      <div class="pumper">@ Powered by Pumper</div>
     </div>
 
     <script src="script.js"></script>
